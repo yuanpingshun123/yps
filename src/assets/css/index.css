@@ -1,0 +1,306 @@
+/**
+ * Eric Meyer's Reset CSS v2.0 (http://meyerweb.com/eric/tools/css/reset/)
+ * http://cssreset.com
+ */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video, input {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font-weight: normal;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, menu, nav, section {
+  display: block;
+}
+
+.container .table .el-tabs--card > .el-tabs__header .el-tabs__item {
+  font-weight: 400;
+  color: rgba(127, 127, 129, 1);
+  font-size: 12px;
+}
+
+.bottom .el-tabs--card > .el-tabs__header .el-tabs__item {
+  font-weight: 400;
+  color: rgba(63, 162, 232, 1);
+  font-size: 12px;
+}
+
+body {
+  line-height: 1;
+  height: 100%;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* custom */
+a {
+  color: #7e8c8d;
+  text-decoration: none;
+  -webkit-backface-visibility: hidden;
+}
+
+li {
+  list-style: none;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+::-webkit-scrollbar-track-piece {
+  background-color: rgba(0, 0, 0, 0.2);
+  -webkit-border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb:vertical {
+  height: 5px;
+  background-color: rgba(125, 125, 125, 0.7);
+  -webkit-border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb:horizontal {
+  width: 5px;
+  background-color: rgba(125, 125, 125, 0.7);
+  -webkit-border-radius: 6px;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  -webkit-text-size-adjust: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+/*显示省略号*/
+.ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.el-pagination .el-select .el-input .el-input__inner {
+  padding-right: 25px;
+  border-radius: 3px;
+  width: 100px;
+}
+
+input, textarea {
+  outline: none;
+  resize: none;
+  text-indent: 10px;
+}
+
+::-webkit-input-placeholder {
+  font-size: 10px;
+  color: #9E9EA0; /* 使用webkit内核的浏览器 */
+}
+
+:-moz-placeholder {
+  font-size: 10px;
+  color: #9E9EA0;
+}
+
+/* Firefox版本4-18 */
+::-moz-placeholder {
+  font-size: 10px;
+  color: #9E9EA0;
+}
+
+/* Firefox版本19+ */
+:-ms-input-placeholder {
+  font-size: 10px;
+  color: #9E9EA0;
+}
+
+.reIput {
+  height: 30px;
+  text-align: center;
+  background: #F5F6FA;
+  border-radius: 4px;
+  color: #7F7F81;
+}
+
+.supplier .el-input--mini .el-input__inner {
+  /*background: rgb(245, 246, 250);*/
+  /*width: 140px;*/
+}
+
+/*.supplier .el-input--suffix .el-input__inner{*/
+/*  background: rgb(245, 246, 250);*/
+/*  width: 133px;*/
+/*  margin-left: 8px;*/
+/*}*/
+.el-range-editor.is-active, .el-range-editor {
+  width: 300px;
+}
+
+/*.cardRight .selects .s-right .date-picks{*/
+/*  */
+/*}*/
+/*.order-list .el-date-editor .el-range-separator {*/
+/*  padding: 0 5px;*/
+/*  line-height: 32px;*/
+/*  width: 10% !important;*/
+/*  color: #303133;*/
+/*}*/
+
+/*.order-list .selects .s-right .date-picks{*/
+/*  width: 260px;*/
+/*}*/
+
+
+.el-transfer-panel {
+  width: 250px !important;
+}
+
+.el-transfer-panel__item.el-checkbox {
+  display: block;
+}
+
+input, textarea {
+  color: #9E9EA0;
+}
+
+.el-radio {
+  margin-right: 10px !important;
+}
+
+.productManage .proSort .el-select > .el-input {
+  width: 136px;
+}
+
+.productManage .label .el-select > .el-input {
+  width: 276px;
+}
+
+.guest .el-input__inner {
+  width: 178px !important;
+}
+
+.guestTop .el-input {
+  width: 178px;
+}
+
+.guestBottom .el-upload--picture-card {
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+}
+
+.content-center .el-input--mini .el-input__inner {
+  width: 122px;
+  /*padding: 0;*/
+  verflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.content-center .cost .el-input--mini .el-input__inner {
+  width: 251px;
+}
+
+.content-center .way .el-input--mini .el-input__inner {
+  width: 86.3px;
+}
+
+.content-center .input .el-input--mini .el-input__inner {
+  width: 78.3px;
+  margin-right: 8px;
+}
+
+.content-bottom .el-input--mini .el-input__inner {
+  width: 187px;
+}
+
+.moreSelect .el-input__inner {
+  width: 500px !important;
+}
+
+.examine .el-textarea {
+  width: 200px;
+}
+
+.views .el-pagination {
+  text-align: center;
+}
+
+.orderDetail .el-table tr {
+  background: #F5F7FA !important;
+}
+
+.orderlist .nav span {
+  font-size: 14px;
+  font-weight: 400;
+  color: #9D9D9D;
+  /*margin-right: 69px;*/
+  cursor: pointer;
+}
+/* .orderlist .el-input-group__append{
+  background: #3D3D3D;
+  color:white;
+} */
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  font-size: 12px!important;
+
+}
+::-moz-placeholder { /* Firefox 19+ */
+  font-size: 12px!important;
+
+}
+:-ms-input-placeholder { /* IE 10+ */
+  font-size: 12px!important;
+
+}
+:-moz-placeholder { /* Firefox 18- */
+  font-size: 12px!important;
+
+}
+*{
+  font-family:"\5FAE\8F6F\96C5\9ED1","Microsoft Yahei","Hiragino Sans GB",tahoma,arial,"\5B8B\4F53"  ;
+}
+
+.el-carousel--horizontal{
+  overflow: hidden;
+}
+.el-dialog__headerbtn .el-dialog__close{
+  font-size: 28px;
+}
+.el-breadcrumb{
+  margin-bottom: 20px;
+}
+.el-dialog__header{
+  text-align: center !important;
+}

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">
+    <link rel="icon" href="<%= BASE_URL %>favicon.ico">
+    <title>diy</title>
+  </head>
+  <body>
+    <noscript>
+      <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
+    </noscript>
+    <div id="app"></div>
+    <!-- built files will be auto injected -->
+  </body>
+</html>
+<script>
+  //禁止浏览器使用backspace键后退网页
+  function banBackSpace(e) {
+  var ev = e || window.event;
+  //各种浏览器下获取事件对象
+  var obj = ev.relatedTarget || ev.srcElement || ev.target || ev.currentTarget;
+  //按下Backspace键
+  if(ev.keyCode == 8) {
+  var tagName = obj.nodeName //标签名称
+  //如果标签不是input或者textarea则阻止Backspace
+  if(tagName != 'INPUT' && tagName != 'TEXTAREA') {
+  return stopIt(ev);
+  }
+  var tagType = obj.type.toUpperCase(); //标签类型
+  //input标签除了下面几种类型，全部阻止Backspace
+  if(tagName == 'INPUT' && (tagType != 'TEXT' && tagType != 'TEXTAREA' && tagType != 'PASSWORD')) {
+  return stopIt(ev);
+  }
+  //input或者textarea输入框如果不可编辑则阻止Backspace
+  if((tagName == 'INPUT' || tagName == 'TEXTAREA') && (obj.readOnly == true || obj.disabled == true)) {
+  return stopIt(ev);
+  }
+  }
+  }
+
+
+  function stopIt(ev) {
+  if(ev.preventDefault) {
+  //preventDefault()方法阻止元素发生默认的行为
+  ev.preventDefault();
+  }
+  if(ev.returnValue) {
+  //IE浏览器下用window.event.returnValue = false;实现阻止元素发生默认的行为
+  ev.returnValue = false;
+  }
+  return false;
+  }
+  //对功能按键的获取
+  document.onkeydown = banBackSpace;
+
+  </script>
